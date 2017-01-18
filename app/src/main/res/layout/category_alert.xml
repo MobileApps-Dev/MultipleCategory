@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_select_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Choose any Category"
+        android:textColor="#ff33b5e5"
+        android:textSize="20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ff33b5e5" />
+
+    <AutoCompleteTextView
+        android:id="@+id/edt_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittext_style"
+        android:clickable="false"
+        android:editable="false"
+        android:ems="5"
+        android:focusable="false"
+        android:hint="Select"
+        android:inputType="text"
+        android:padding="7dp"
+        android:singleLine="true"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/txt_select_subcategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Choose any SubCategory"
+        android:textColor="#ff33b5e5"
+        android:textSize="20dp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ff33b5e5" />
+
+    <AutoCompleteTextView
+        android:id="@+id/edt_sub_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittext_style"
+        android:clickable="false"
+        android:editable="false"
+        android:ems="5"
+        android:focusable="false"
+        android:hint="Select"
+        android:inputType="text"
+        android:padding="7dp"
+        android:singleLine="true"
+        android:textSize="15sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <game.com.multiplecategory.view.FlowLayout
+                android:id="@+id/fllayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+
+
+            </game.com.multiplecategory.view.FlowLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_round_border"
+        android:gravity="center"
+        android:inputType="textCapCharacters"
+        android:padding="5dp"
+        android:text="Submit"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</LinearLayout>
